@@ -26,6 +26,7 @@ public class Sandbox : MonoBehaviour {
 	private void Awake()
 	{
 		ThreadHelper.LogCurThread($"Sandbox Awake");
+		var f = StaticConstructor.foo;
 	}
 
 	private void Start ()
